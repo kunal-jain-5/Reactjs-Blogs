@@ -4,10 +4,10 @@ const BlogList = (props) => {
     return (  
         <div className="blog-list">
             <h2>{title}</h2>
-            {blogs.map((blog) => (
-                <div className="blog-preview" key={blog.id}>
-                    <h2>{ blog.title }</h2>
-                    <p>Written by {blog.author}</p>
+            {blogs.map((blogItem) => (
+                <div className="blog-preview" key={blogItem.id}>
+                    <h2>{ blogItem.title }</h2>
+                    <p>Written by {blogItem.author}</p>
                 </div>
             ))}
         </div>
